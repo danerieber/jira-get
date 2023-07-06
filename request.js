@@ -30,6 +30,12 @@ export default class JiraRequest {
         this.#params.startAt ??= 0;
         while (true) {
             const result = await this.#run();
+
+            if (!this.body.maxResults) {
+                console.warn(`ignoring .all() for non-paginated endpoint (${this.#url})`);
+                return result;
+            }
+
             results = results.concat(result);
 
             this.#params.startAt += this.body.maxResults;
@@ -52,6 +58,10 @@ export default class JiraRequest {
 
     map(f) {
         return this.select(x => x.map(f));
+    }
+
+    filter(f) {
+        return this.select(x => x.filter(f));
     }
 
     all() {
