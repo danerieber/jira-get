@@ -1,6 +1,6 @@
 {
   "name": "@danerieber/jira-get",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "get data from Jira GET endpoints quickly",
   "main": "jira.js",
   "scripts": {

@@ -1,4 +1,5 @@
-import JiraRequest from "./request.js";
+import JiraRequest from './request.js';
+import { Buffer } from 'buffer';
 
 export default class Jira {
     #server
