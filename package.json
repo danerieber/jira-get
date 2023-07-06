@@ -1,0 +1,12 @@
+{
+  "name": "jira",
+  "version": "1.0.0",
+  "description": "Jira Is Really Awesome",
+  "main": "jira.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dane Rieber",
+  "license": "ISC",
+  "type": "module"
+}
