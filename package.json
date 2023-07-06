@@ -1,12 +1,20 @@
 {
-  "name": "jira",
+  "name": "@danerieber/jira-get",
   "version": "1.0.0",
-  "description": "Jira Is Really Awesome",
+  "description": "get data from Jira GET endpoints quickly",
   "main": "jira.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Dane Rieber",
   "license": "ISC",
-  "type": "module"
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/danerieber/jira-get.git"
+  },
+  "bugs": {
+    "url": "https://github.com/danerieber/jira-get/issues"
+  },
+  "homepage": "https://github.com/danerieber/jira-get#readme"
 }
