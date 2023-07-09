@@ -4,6 +4,7 @@ export default class JiraRequest {
     #mapper
     #params
     #all
+    #log
 
     constructor(url, init) {
         this.#url = url;
@@ -19,7 +20,11 @@ export default class JiraRequest {
         if (this.#params) this.#url.search = new URLSearchParams(this.#params);
         this.res = await fetch(this.#url, this.#init);
         this.body = await this.res.json();
-        return await this.#mapper(this.body);
+        const result = await this.#mapper(this.body);
+        if (this.#log) {
+            console.log(result);
+        }
+        return result;
     }
 
     async #runAll() {
@@ -66,6 +71,11 @@ export default class JiraRequest {
 
     all() {
         this.#all = true;
+        return this;
+    }
+
+    log() {
+        this.#log = true;
         return this;
     }
 }
