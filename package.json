@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/danerieber/jira-get/issues"
   },
-  "homepage": "https://github.com/danerieber/jira-get#readme"
+  "homepage": "https://github.com/danerieber/jira-get#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.22.9",
+    "jest": "^29.6.1",
+    "jest-babel": "^1.0.1"
+  }
 }
