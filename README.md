@@ -7,7 +7,7 @@ get data from Jira GET endpoints quickly
 ## Create client
 
 ```js
-import Jira from 'jira-get';
+import Jira from '@danerieber/jira-get';
 
 const jira = new Jira('URL', 'EMAIL', 'TOKEN');
 ```
