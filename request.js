@@ -44,7 +44,7 @@ export default class JiraRequest {
             results = results.concat(result);
 
             this.#params.startAt += this.body.maxResults;
-            if (this.#params.startAt > this.body.total || this.body.isLast) break;
+            if (this.#params.startAt >= this.body.total || this.body.isLast) break;
         }
 
         return results;
